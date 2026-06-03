@@ -1,0 +1,10 @@
+directories:
+    modules: .wippy
+    src: ./src
+modules:
+    - name: wippy/terminal
+      version: 0.3.8
+      hash: a1294e2bd30199de54dc4c84e18960886d24a641412e65f79c1123e70990bcdd
+    - name: wippy/test
+      version: 0.3.12
+      hash: b024af2dab85e9b612b0bf3979a7941d35f165d7b8974ed8c27c26db11373fb4

@@ -1,0 +1,9 @@
+organization: wolfy-j
+module: snake
+description: Classic snake game for the terminal
+license: MIT
+keywords:
+  - game
+  - snake
+  - terminal
+  - tui

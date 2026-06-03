@@ -1,0 +1,35 @@
+version: "1.0"
+namespace: snake
+
+entries:
+  - name: definition
+    kind: ns.definition
+    readme: file://README.md
+    meta:
+      title: Snake Game
+      description: Classic snake game for the terminal
+
+  - name: terminal
+    kind: ns.dependency
+    component: wippy/terminal
+    version: "*"
+
+  - name: game
+    kind: library.lua
+    source: file://game.lua
+    modules:
+      - time
+
+  - name: play
+    kind: process.lua
+    meta:
+      command:
+        name: snake
+        short: Play snake game
+    source: file://play.lua
+    method: main
+    modules:
+      - io
+      - time
+    imports:
+      game: snake:game
